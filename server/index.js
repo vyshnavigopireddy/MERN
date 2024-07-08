@@ -365,10 +365,10 @@ mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>{c
 
 const server=new ApolloServer({typeDefs,resolvers})
 app.use('/users',userApiFromRouter);
-async function startServer(){
-    await server.start();
-    server.applyMiddleware({app});//run express code
-    app.listen(port,()=>{console.log(`Server live at ${port}`);
-})
+async function StartServer(){
 }
-startServer();
+function Testing(){
+    return 0;
+}
+Testing();
+StartServer();
